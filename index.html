@@ -7,6 +7,91 @@
       <link rel="stylesheet" media="screen" href="/style.css">
     </head>
   <body>
+      <style>
+          body {
+    background: #020202;
+}
+  
+  /* Header/Blog Title - Menu */
+.header {
+    position:relative;
+    padding:25%;
+    text-align: center;
+    background-image: url(imagensI/InicioCorte.png);
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 100%;  
+  }
+
+  /* Navegação pelo site */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(5, 5, 5);
+    
+  }
+.topnav a {
+    float: left;
+    display: line-block;
+    text-align: center;
+    padding: 0.5%;
+  }
+.topnav a:hover {
+    background-color: rgb(187, 173, 48);
+    color: black;
+}
+#posicao{
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    margin-top: 1em;
+
+}
+.aba {
+    display: inline-block;
+    font-size: 100%;  
+
+}
+
+.aba > a {   /* colocando margem com borda */
+    float: left;
+    width: 99%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(58, 58, 209);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+.aba img{
+    height: 95em;
+}
+
+.conteudo{
+    display: block;
+    position: absolute;
+    color: rgb(236, 232, 232);
+    text-justify: inter-word ;
+    text-align: justify;
+    left: 25% ;
+    width: 50% ;
+    height: 40%;
+    margin: 55% auto;
+}
+p, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 1 0.2em;
+}
+.conteudo a{
+    color: chartreuse;
+}
+          
+      </style>
+      
+     
     
     <div class="header" id="img"></div>
     <div class="topnav" id="posicao">
