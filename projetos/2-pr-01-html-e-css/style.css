@@ -1,0 +1,344 @@
+
+/*==========================================================================
+Globrais - Iniciando - Body e HTML
+========================================================================== */
+
+html,body {
+  font-family: sans-serif;          /* fonte geral da página */
+  line-height: 20px;                /* espaçamento das linhas página inteira */
+  background: rgba(253, 251, 251); /* Requisito obrigatório */
+  margin-left: 0;                   /* tira completamente a margem da esquerda - tirei por causa do meu cab fixo */
+}
+p{
+  text-justify: inter-word ;        /* texto justificado entre letras */
+  text-align: justify;              /* posição alinhamento do texto em justificado */
+  font-family: 'Trebuchet MS';       /* fonte */
+}
+.wrapper{
+max-width: 1000px;
+width: 100%;
+margin: 0 auto;
+}
+/*==========================================================================
+Introdução - Sessão Header
+==========================================================================*/
+.intro {
+  overflow: hidden;                  /*cria um barra para rolar e descer com a página */ 
+}
+#cabecalho.intro{                    /* enviando para a classe intro uma id cabecalho com especificações */
+  position: fixed;                   /* Requisito obrigatório */
+  top:0;                             /* Requisito obrigatório */
+}
+.intro header{                       /* Deixando o header do lado esquerdo da página - Léia e Minha Jornada */
+  position: relative;
+  background: #c879b2 url(imagens/leiaPerfil-sf.png) repeat left bottom;
+  overflow: hidden;                   /* cria uma barra vertical ou hoziontal */
+  width: 100%;                        /* largura do bloco Léia e Minha Jornada*/
+  height: 100em;                      /* altura do bloco */
+  float: left;                        /* posiciona o bloco a esquerda da página permitindo os outros se posicionarem. Flutua o elemento */
+}
+
+.intro header h1 {                    /* estilizando o h1 - Léia Ribeiro */
+  position: absolute;                 /* ocupando posição absoluta nesse bloco */
+  color: #ffffff;                   /* cor da fonte */
+  font-size: 200%;                    /* tamando da fonte na página */
+  top: 3em;                           /* proporção do h1 com relação a topo da página */
+  left: -1.9em;                       /* posição do topo para a direita */
+  padding: 0.7em;                     /* posição do topo para o meio */
+  -webkit-transform: rotate(-90deg);  /* permite a rotação para a vertical do h1 */
+
+
+}
+.intro header h2 {                    /* estilizando o h1 da introdução */
+  position: relative;                 /* posição em volta do elemento absoluto da página */
+  background: #15964f url(imagens/trybe_xp_inc.jpg) no-repeat left bottom; /* colocando imagem no backgroud h2 */
+  background-size: 100%;              /* posição da imagem trybe_xp em relação ao h2 */
+  float: right;                       /* flutuando para a direita */
+  color: #ffffff;                   /* cor da fonte */
+  font-size: 210%;                    /* tamando da fonte na página */
+  line-height: 1.25em;                /* posição entre linhas */
+  width: 60%;                         /* proporção da largura da área do conteúdo */
+  height: 20.019em;                   /* proporção a altura da área do conteúdo */
+  margin: 0;                          /* proporção de margem nos quatro lados do conteúdo */
+  padding: 9em 0.5em 0 0.5em;         /* proporção de distância entre o conteúdo e suas bordas */
+  box-sizing: border-box;             /* mudando a propriedade padrão da box model - largura e altura */
+}
+
+/* 
+==========================================================================
+Desenvolvimento da Página - Sessões - MAIN - GERAL - DIV MAIOR
+==========================================================================
+*/
+
+.main {                               /* Página inteira de conteúdos - Meio - Miolo */
+  background-size: cover;             /* ajuste da imagem o mais largamente possível e mantendo sua proporção */
+  top: 0;                             /* proporção da imagem com relação a topo da página */
+  padding: 15em 0;                    /* proporção de distância entre o conteúdo e suas bordas - superior|horizontal*/
+  position: relative;                 /* posição em volta do elemento absoluto da página */
+}
+.fundo {
+  background: red;
+  border-radius: 50%;
+  width: 650px;
+  height: 650px;
+  position: relative;
+  bottom: 15em;
+  left: 67em;
+}
+
+/* 
+==========================================================================
+Sessão 1 - Apresentação Pessoal - Léia Ribeiro - Requisito NÂO obrigatório
+==========================================================================
+*/
+.sobremim {                          /* criando uma nova classe sobremim */
+  background:rgb(2, 62, 125);             /* cor de fundo */
+  position: relative;                /* posição - em volta - com relação ao main */
+  color: #d6c8c8;                  /* cor de fonte */
+  width: 47%;                        /* proporção da largura da área do conteúdo*/
+  padding: 2em 1em;                  /* proporção de distância entre o conteúdo e suas bordas - superior|horizontal*/
+  left: 1em;                         /* posição do bloco para a direita */
+  font-family: 'Trebuchet MS';       /* fonte do bloco */
+  margin-top: -36%;
+}
+
+.sobremim h3 {                       /* Edição do Título h3 */
+  position: absolute;                /* posição absoluta no blocc*/ 
+  color: #ffffff;                  /* cor de fonte */
+  font-size: 200%;                   /* tamando da fonte na página */
+  line-height: 1em;                  /* posição entre linhas */
+  top: 6em;                          /* proporção do h3 com relação a topo do bloco */
+  left: -0.7em;                      /* posição do h3 do topo para a direita */
+  margin: 0;                         /* proporção de margem nos quatro lados do conteúdo */
+  padding: 0;                        /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
+  -webkit-transform: rotate(-90deg); /* permite a rotação para a vertical do h3 */
+}
+
+.sobremim p {                        /* Edição do Parágrafo */
+  padding-left: 20%;                 /* inicio do preenchimento do parágrado - ladoe esquedo */
+  text-justify: inter-word ;         /* texto justificado entre linhas*/
+  text-align: justify;               /* alinhamento do texto justificado*/
+  margin-inline: 2em;                /* definição de margem - inicio e fim - relativos ao text size*/
+  font-size: 120%;                   /* tamando da fonte na página */
+  line-height: 1.3em;                /* posição entre linhas */
+}
+
+/* 
+==========================================================================
+Sessão 2 - Artigo - lado esquerdo - Requisito obrigatório
+==========================================================================
+*/
+
+.lado-esquerdo {                     /* Edição do requisito obrigatório Lado Esquerdo*/
+  background: rgb(255, 153, 172);             /* cor do fundo */
+  position: absolute;                /* posição com relação ao main */
+  float: left;                       /* define posição flutuando a esquerda - REQUISITO OBRIGATÓRIO */
+  right: 37%;                        /* define o quanto ele está a esquerda na main */                        
+  margin-top: 14em;                  /* posição quanto ao top da página */
+  width: 42%;                        /* proporção da largura do bloco*/
+  padding: 2em;                      /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
+  box-sizing: border-box;            /* mudando a propriedade padrão da box model - largura e altura */
+}
+
+.lado-esquerdo h2 {                  /* Edição do Título h2 */
+  font-size: 220%;                   /* tamando da fonte na página */
+}
+.lado-esquerdo p {
+  width: 99%;                         /* proporção da largura da área do conteúdo */
+  text-justify: inter-word;           /* texto justificado entre linhas*/
+  text-align: justify;                /* alinhamento do texto justificado*/
+  font-family: 'Trebuchet MS';        /* fonte dos parágrafos do bloco*/ 
+  font-size: 130%;                    /* tamando da fonte na página */
+  line-height: 1.3em;                 /* posição entre linhas */
+}
+
+/* 
+==========================================================================
+Sessão 3 - Aprendizados - lado direito - Requisito obrigatório
+==========================================================================
+*/
+
+.lado-direito{                                    /* Edição do requisito obrigatório Lado Direito*/
+  background: #f48c06;               /* cor de fundo do bloco */
+  position: absolute;                             /* posição com relação ao main */
+  float: right;                                   /* flutuando a direita*/
+  right: 2.2%;                                      /* define o quanto ele está da direita para main*/
+  margin-top: -2em;                               /* define o quanto ele está da margem do topo */
+  width: 35.7%;                                     /* proporção da largura do bloco*/
+  padding: 5em 2em 30em 2em;                      /* proporção de distância entre o conteúdo e suas bordas*/
+  box-sizing: border-box;                         /* mudando a propriedade padrão da box model - largura e altura */
+  font-family: 'Trebuchet MS';                    /* fonte dos parágrafos do bloco*/ 
+  font-size: 105%;                                /* tamando da fonte na página */
+}
+
+.tabela{                                          /* formatando a estrutura da tabela*/
+  width: 120%;                                    /* exibição da tabela no bloco*/
+  margin-top: -4em;                               /* proporção da tabela na pargem do bloco*/
+}
+.tr, td{
+  display: inline-block;                         /* exibição em bloco embutido*/
+  position: relative;                            /* posição ao redor da main*/
+  border-collapse: separate;                     /* permite cada célula exibir suas próprias bordas*/
+  width: 14%;                                    /* proporção da largura da tabela no bloco*/
+  text-align: center;                            /* alinhando conteúdo da tabela em centralizado*/
+  right: 1%;                                     /* colocando mais para a esquerda dentro do bloco */
+  margin-top: 0.7em;                             /* definindo aqui as marges de uma coluna pra outra*/ 
+}
+
+.lado-direito h3 {                               /* Formatando h3 do lado direito*/     
+  font-size: 170%;                               /* tamano de exibição da fonte na página*/
+  text-align: center;                            /* alinhamento dos h3 no bloco */
+  line-height: 1.3em;                            /* espaçamento entre linhas dos h3*/
+ 
+}
+
+.lado-direito, ul, ol{                           /* formatando listas */
+  line-height: 1.7em;                            /* espaçamentos entre linhas das listas ordenada e não ordenada */
+}
+/* 
+==========================================================================
+Sessão 4 - Alguns Dados Pessoais - Requisito NÂO obrigatório
+==========================================================================
+*/
+.coluna{
+  float: left;
+  padding: 68.3px;
+
+}
+.valores{                                     /* crinado classe valores*/
+  position: absolute;                         /* posição com relação a main*/
+  right: 16em;                                 /* posição a esquerda dentro do blco */
+  margin: 75em 0 0 0;                         /* margem com relação ao topo*/
+  width: 60.4%;                                 /* proporção da largura da tabela a página - onde inicia essa bloco*/                      
+  box-sizing: border-box;                     /* mudando a propriedade padrão da box model - largura e altura */
+  font-family: 'Trebuchet MS';                 /* fonte dos parágrafos do bloco*/ 
+  
+}
+#valor1{
+  background: rgb(255, 117, 143);
+}
+#valor2{
+  background: rgb(255, 77, 109);
+}
+#valor3{
+  background: rgb(201, 24, 74);
+}
+.valores h3 {                                  /* formatando h3 valores*/
+  position: absolute;                          /* posição com relação a main*/
+  font-size: 300%;                             /* tamanho de exibição na página */ 
+  line-height: 3em;                            /* espaçamento entre linhas */
+  left: -4.6em;                                  /* posição do h3 do topo para a direita */
+  padding: 3em;                                /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
+  margin-top: -1em;
+  -webkit-transform: rotate(-90deg); /* permite a rotação para a vertical do h3 */
+}
+
+.personalidade{
+  background: rgb(255, 220, 94);              /* cor do fundo */
+  position: absolute;                           /* posição com relação ao main */
+  float: right;                                 /* define posição flutuando a esquerda - REQUISITO OBRIGATÓRIO */
+  right: 37.89%;                                /* define o quanto ele está a esquerda na main */                        
+  margin-top: 57.5em;                           /* posição quanto ao top da página */
+  width: 36.7%;                                 /* proporção da largura do bloco*/
+  padding: 2em;                                 /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
+  box-sizing: border-box;                       /* mudando a propriedade padrão da box model - largura e altura */
+  font-family: 'Trebuchet MS';                    /* fonte dos parágrafos do bloco*/ 
+  font-size: 105%;                                /* tamando da fonte na página */
+}
+
+.pensamento{
+  background: rgb(255, 163, 165);             /* cor do fundo */
+  position: absolute;                           /* posição com relação ao main */
+  float: right;                                 /* define posição flutuando a esquerda - REQUISITO OBRIGATÓRIO */
+  right: 37.88%;                                /* define o quanto ele está a esquerda na main */                        
+  margin-top: 93em;                             /* posição quanto ao top da página */
+  width: 36.7%;                                 /* proporção da largura do bloco*/
+  padding: 2em;                                 /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
+  box-sizing: border-box;     
+  line-height: 1.7em;
+  font-family: 'Trebuchet MS';                    /* fonte dos parágrafos do bloco*/ 
+  font-size: 105%;                                /* tamando da fonte na página */
+}
+
+/*==========================================================================
+Sessão 5 - Footer- Requisito obrigatório
+========================================================================== */
+
+footer {
+  background: #ffc6ff;
+  display: block;
+  position: absolute;
+  float: right;
+  margin-top: 107em;
+  width: 35%;
+  right: 4%;
+  padding: 2em 3em 2em 1em;
+  box-sizing: border-box;
+}
+footer p{ 
+  font-size: 100%;                                /* tamando da fonte na página */
+  line-height: 1.2em;                            /* espaçamento entre linhas dos p*/
+  padding:0.2em 1em 0em 2.5em;
+}
+
+.circulo {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  float: right;
+  margin-top: 96.5em;
+}
+
+.circulo img {
+  position: relative;
+  bottom: 1.2em;
+  width: 410px;
+  left: -7em;
+}
+.imagem01{
+  float: left;
+  position: relative;
+  left: 25.5em;
+  margin-top: 25.5em;
+}
+/* 
+===================================================
+Referências Bibliográficas 
+===================================================
+/*
+1. Ana Gomes - GitHub - Trybe Projetos - Projeto HTML & CSS
+Acessível em: https://github.com/gomesanac/trybe-projects/tree/main/html-css-js/html-css
+
+2. W 3 Schools CSS
+Acessível em: https://www.w3schools.com/css/default.asp
+
+3.  W 3 Schools HTML
+Acessível em: https://www.w3schools.com/html/default.asp
+
+4. Stack overflow - Acessado para tirar dúvidas
+Acessível em: https://pt.stackoverflow.com/
+
+5. Shilds IO - para utilização dos Badgel
+Acessível em: https://shields.io/
+
+6. Léia Ribeiro - GitHub - Referẽncia para montar o perfil
+Acessível em: https://github.com/leiaribeirot
+
+7. Coolors - Utilizado na referência para as cores
+Acessível em: https://coolors.co/palettes/trending
+
+8. Maujor - O dinossauro das CSS - Referência para tirar dúvidas
+Acessível em: https://www.maujor.com/
+
+9 - CSS Zen Garden - Inspiração para o Layout 
+Acessível em: http://www.csszengarden.com/221/
+
+10. Google - Buscador de Pesquisas - Utilizado a todo momento
+Acessível em: https://www.google.com/
+
+Infelizmente não seria possível colocar aqui cada página que pesquisei, pois são muitas que nem faço mais ideia.
+No entanto, essas são as principais, as mais acessadas. 
+*/
