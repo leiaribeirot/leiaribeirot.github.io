@@ -1,26 +1,51 @@
+/*==========================================================================
+                            Resetando CSS
+========================================================================== */
+article, aside, header, main, nav, section {display: block;}
+html {font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+body {margin: 0;}
+hi {font-size: 2em; margin: 0.67em 0;}
+img {border: 0;}
+table{border-collapse: collapse; border-spacing: 0;}
 
 /*==========================================================================
-Globrais - Iniciando - Body e HTML
+                Globrais - Iniciando - Body e Html 
 ========================================================================== */
 
 html,body {
-  font-family: sans-serif;          /* fonte geral da página */
-  line-height: 20px;                /* espaçamento das linhas página inteira */
+  font-family: "ff-meta-web-pro", sans-serif;  /* fonte geral da página */
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
+  line-height: 26px;
+  font-family: sans-serif;         
   background: rgba(253, 251, 251); /* Requisito obrigatório */
-  margin-left: 0;                   /* tira completamente a margem da esquerda - tirei por causa do meu cab fixo */
+  background-size: 60%;                 /* tamanho da imagem de fundo*/
+  color: black;
 }
-p{
+  p{
   text-justify: inter-word ;        /* texto justificado entre letras */
   text-align: justify;              /* posição alinhamento do texto em justificado */
   font-family: 'Trebuchet MS';       /* fonte */
 }
-.wrapper{
-max-width: 1000px;
-width: 100%;
-margin: 0 auto;
+
+/*
+=======================================================================
+     Clase para a DIV PRINCIPAL QUE CONSTARÁ TODAS AS DIVS DENTRO
+======================================================================= */
+.page-wrapper{                           /* wrapper é como um container que vocẽ separa o header do conteúdo e do footer*/
+  position: relative;
+  width: 100%;
+  max-width: 120em;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;      /* permite a adequação do conteúdo para o navegador chromer */
+  -moz-box-sizing: border-box;         /* permite a adequação do conteúdo para o navegador mozila*/
+  box-sizing: border-box;  
 }
+
 /*==========================================================================
-Introdução - Sessão Header
+                       Introdução - Sessão Header
 ==========================================================================*/
 .intro {
   overflow: hidden;                  /*cria um barra para rolar e descer com a página */ 
@@ -36,17 +61,23 @@ Introdução - Sessão Header
   width: 100%;                        /* largura do bloco Léia e Minha Jornada*/
   height: 100em;                      /* altura do bloco */
   float: left;                        /* posiciona o bloco a esquerda da página permitindo os outros se posicionarem. Flutua o elemento */
+  -webkit-box-sizing: border-box;      /* permite a adequação do conteúdo para o navegador chromer */
+  -moz-box-sizing: border-box;         /* permite a adequação do conteúdo para o navegador mozila*/
+  box-sizing: border-box;  
 }
+
 
 .intro header h1 {                    /* estilizando o h1 - Léia Ribeiro */
   position: absolute;                 /* ocupando posição absoluta nesse bloco */
   color: #ffffff;                   /* cor da fonte */
-  font-size: 200%;                    /* tamando da fonte na página */
+  font-size: 300%;                    /* tamando da fonte na página */
   top: 3em;                           /* proporção do h1 com relação a topo da página */
-  left: -1.9em;                       /* posição do topo para a direita */
+  margin-left: -1.9em;  /* posição do topo para a direita */
   padding: 0.7em;                     /* posição do topo para o meio */
   -webkit-transform: rotate(-90deg);  /* permite a rotação para a vertical do h1 */
-
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 .intro header h2 {                    /* estilizando o h1 da introdução */
@@ -59,22 +90,28 @@ Introdução - Sessão Header
   line-height: 1.25em;                /* posição entre linhas */
   width: 60%;                         /* proporção da largura da área do conteúdo */
   height: 20.019em;                   /* proporção a altura da área do conteúdo */
-  margin: 0;                          /* proporção de margem nos quatro lados do conteúdo */
+  margin: 0 0 0 0 ;                   /* proporção de margem nos quatro lados do conteúdo */
   padding: 9em 0.5em 0 0.5em;         /* proporção de distância entre o conteúdo e suas bordas */
   box-sizing: border-box;             /* mudando a propriedade padrão da box model - largura e altura */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 /* 
 ==========================================================================
-Desenvolvimento da Página - Sessões - MAIN - GERAL - DIV MAIOR
+              Desenvolvimento da Página em Sessões 
 ==========================================================================
 */
 
 .main {                               /* Página inteira de conteúdos - Meio - Miolo */
   background-size: cover;             /* ajuste da imagem o mais largamente possível e mantendo sua proporção */
   top: 0;                             /* proporção da imagem com relação a topo da página */
-  padding: 15em 0;                    /* proporção de distância entre o conteúdo e suas bordas - superior|horizontal*/
+  padding: 16em 0;                    /* proporção de distância entre o conteúdo e suas bordas - superior|horizontal*/
   position: relative;                 /* posição em volta do elemento absoluto da página */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 .fundo {
   background: red;
@@ -83,7 +120,11 @@ Desenvolvimento da Página - Sessões - MAIN - GERAL - DIV MAIOR
   height: 650px;
   position: relative;
   bottom: 15em;
-  left: 67em;
+  margin-left: 67em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 
 /* 
@@ -94,12 +135,15 @@ Sessão 1 - Apresentação Pessoal - Léia Ribeiro - Requisito NÂO obrigatório
 .sobremim {                          /* criando uma nova classe sobremim */
   background:rgb(2, 62, 125);             /* cor de fundo */
   position: relative;                /* posição - em volta - com relação ao main */
-  color: #d6c8c8;                  /* cor de fonte */
+  color: rgb(226, 217, 217);                  /* cor de fonte */
   width: 47%;                        /* proporção da largura da área do conteúdo*/
   padding: 2em 1em;                  /* proporção de distância entre o conteúdo e suas bordas - superior|horizontal*/
-  left: 1em;                         /* posição do bloco para a direita */
+  margin-left: 1em;                         /* posição do bloco para a direita */
   font-family: 'Trebuchet MS';       /* fonte do bloco */
   margin-top: -36%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .sobremim h3 {                       /* Edição do Título h3 */
@@ -108,7 +152,7 @@ Sessão 1 - Apresentação Pessoal - Léia Ribeiro - Requisito NÂO obrigatório
   font-size: 200%;                   /* tamando da fonte na página */
   line-height: 1em;                  /* posição entre linhas */
   top: 6em;                          /* proporção do h3 com relação a topo do bloco */
-  left: -0.7em;                      /* posição do h3 do topo para a direita */
+  margin-left: -0.7em;                      /* posição do h3 do topo para a direita */
   margin: 0;                         /* proporção de margem nos quatro lados do conteúdo */
   padding: 0;                        /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
   -webkit-transform: rotate(-90deg); /* permite a rotação para a vertical do h3 */
@@ -138,6 +182,8 @@ Sessão 2 - Artigo - lado esquerdo - Requisito obrigatório
   width: 42%;                        /* proporção da largura do bloco*/
   padding: 2em;                      /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
   box-sizing: border-box;            /* mudando a propriedade padrão da box model - largura e altura */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .lado-esquerdo h2 {                  /* Edição do Título h2 */
@@ -163,17 +209,42 @@ Sessão 3 - Aprendizados - lado direito - Requisito obrigatório
   position: absolute;                             /* posição com relação ao main */
   float: right;                                   /* flutuando a direita*/
   right: 2.2%;                                      /* define o quanto ele está da direita para main*/
-  margin-top: -2em;                               /* define o quanto ele está da margem do topo */
+  margin-top: em;                               /* define o quanto ele está da margem do topo */
   width: 35.7%;                                     /* proporção da largura do bloco*/
   padding: 5em 2em 30em 2em;                      /* proporção de distância entre o conteúdo e suas bordas*/
   box-sizing: border-box;                         /* mudando a propriedade padrão da box model - largura e altura */
   font-family: 'Trebuchet MS';                    /* fonte dos parágrafos do bloco*/ 
   font-size: 105%;                                /* tamando da fonte na página */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.lado-direito h3 {                               /* Formatando h3 do lado direito*/     
+  font-size: 170%;                               /* tamano de exibição da fonte na página*/
+  text-align: center;                            /* alinhamento dos h3 no bloco */
+  margin-top: 3em;
+}
+
+#aprendizado{
+  margin-top: 4em;
+}
+#competenciasDesenvolvidas{
+  margin-top: -5em;
+}
+#ccompetenciasaDesenvolver{
+  margin-top: -4em;
+}
+.lado-direito, ul, ol{                           /* formatando listas */
+  line-height: 1.7em;                            /* espaçamentos entre linhas das listas ordenada e não ordenada */
 }
 
 .tabela{                                          /* formatando a estrutura da tabela*/
-  width: 120%;                                    /* exibição da tabela no bloco*/
+  width: 41em;                                    /* exibição da tabela no bloco*/
   margin-top: -4em;                               /* proporção da tabela na pargem do bloco*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .tr, td{
   display: inline-block;                         /* exibição em bloco embutido*/
@@ -182,37 +253,30 @@ Sessão 3 - Aprendizados - lado direito - Requisito obrigatório
   width: 14%;                                    /* proporção da largura da tabela no bloco*/
   text-align: center;                            /* alinhando conteúdo da tabela em centralizado*/
   right: 1%;                                     /* colocando mais para a esquerda dentro do bloco */
-  margin-top: 0.7em;                             /* definindo aqui as marges de uma coluna pra outra*/ 
-}
-
-.lado-direito h3 {                               /* Formatando h3 do lado direito*/     
-  font-size: 170%;                               /* tamano de exibição da fonte na página*/
-  text-align: center;                            /* alinhamento dos h3 no bloco */
-  line-height: 1.3em;                            /* espaçamento entre linhas dos h3*/
- 
-}
-
-.lado-direito, ul, ol{                           /* formatando listas */
-  line-height: 1.7em;                            /* espaçamentos entre linhas das listas ordenada e não ordenada */
+  margin-top: -4em;                             /* definindo aqui as marges de uma coluna pra outra*/ 
 }
 /* 
 ==========================================================================
 Sessão 4 - Alguns Dados Pessoais - Requisito NÂO obrigatório
 ==========================================================================
 */
-.coluna{
+.coluna{                                  /* coluna valores */
   float: left;
-  padding: 68.3px;
-
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .valores{                                     /* crinado classe valores*/
   position: absolute;                         /* posição com relação a main*/
-  right: 16em;                                 /* posição a esquerda dentro do blco */
-  margin: 75em 0 0 0;                         /* margem com relação ao topo*/
-  width: 60.4%;                                 /* proporção da largura da tabela a página - onde inicia essa bloco*/                      
+  right: 16.5em;                                 /* posição a esquerda dentro do blco */
+  margin: 69.3em 0 0 0;                         /* margem com relação ao topo*/
+  width: 61%;                                 /* proporção da largura da tabela a página - onde inicia essa bloco*/                      
   box-sizing: border-box;                     /* mudando a propriedade padrão da box model - largura e altura */
   font-family: 'Trebuchet MS';                 /* fonte dos parágrafos do bloco*/ 
-  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 #valor1{
   background: rgb(255, 117, 143);
@@ -227,9 +291,9 @@ Sessão 4 - Alguns Dados Pessoais - Requisito NÂO obrigatório
   position: absolute;                          /* posição com relação a main*/
   font-size: 300%;                             /* tamanho de exibição na página */ 
   line-height: 3em;                            /* espaçamento entre linhas */
-  left: -4.6em;                                  /* posição do h3 do topo para a direita */
+  margin-left: -4.6em;                                  /* posição do h3 do topo para a direita */
   padding: 3em;                                /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
-  margin-top: -1em;
+  margin-top: -1.5em;
   -webkit-transform: rotate(-90deg); /* permite a rotação para a vertical do h3 */
 }
 
@@ -237,49 +301,58 @@ Sessão 4 - Alguns Dados Pessoais - Requisito NÂO obrigatório
   background: rgb(255, 220, 94);              /* cor do fundo */
   position: absolute;                           /* posição com relação ao main */
   float: right;                                 /* define posição flutuando a esquerda - REQUISITO OBRIGATÓRIO */
-  right: 37.89%;                                /* define o quanto ele está a esquerda na main */                        
-  margin-top: 57.5em;                           /* posição quanto ao top da página */
-  width: 36.7%;                                 /* proporção da largura do bloco*/
+  right: 37.88%;                                /* define o quanto ele está a esquerda na main */                        
+  margin-top: 52em;                             /* posição quanto ao top da página */
+  width: 39.5%;                                 /* proporção da largura do bloco*/
   padding: 2em;                                 /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
   box-sizing: border-box;                       /* mudando a propriedade padrão da box model - largura e altura */
   font-family: 'Trebuchet MS';                    /* fonte dos parágrafos do bloco*/ 
   font-size: 105%;                                /* tamando da fonte na página */
+  height: 14em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .pensamento{
   background: rgb(255, 163, 165);             /* cor do fundo */
   position: absolute;                           /* posição com relação ao main */
   float: right;                                 /* define posição flutuando a esquerda - REQUISITO OBRIGATÓRIO */
-  right: 37.88%;                                /* define o quanto ele está a esquerda na main */                        
-  margin-top: 93em;                             /* posição quanto ao top da página */
-  width: 36.7%;                                 /* proporção da largura do bloco*/
-  padding: 2em;                                 /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
+  right: 33.4%;                                /* define o quanto ele está a esquerda na main */                        
+  margin-top: 84.1em;                             /* posição quanto ao top da página */
+  width: 59%;                                 /* proporção da largura do bloco*/
+  padding: 1.8em;                                 /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
   box-sizing: border-box;     
   line-height: 1.7em;
   font-family: 'Trebuchet MS';                    /* fonte dos parágrafos do bloco*/ 
-  font-size: 105%;                                /* tamando da fonte na página */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;                             /* tamando da fonte na página */
 }
-
 /*==========================================================================
 Sessão 5 - Footer- Requisito obrigatório
 ========================================================================== */
 
 footer {
   background: #ffc6ff;
-  display: block;
+  display: inline-block;
   position: absolute;
-  float: right;
-  margin-top: 107em;
-  width: 35%;
-  right: 4%;
-  padding: 2em 3em 2em 1em;
+  float: left;
+  margin-top: 74em;
+  width: 32%;
+  right: 2.2%;
+  padding: 0em 2em 2em 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 footer p{ 
-  font-size: 100%;                                /* tamando da fonte na página */
+  font-size: 95%;                                /* tamando da fonte na página */
   line-height: 1.2em;                            /* espaçamento entre linhas dos p*/
   padding:0.2em 1em 0em 2.5em;
 }
+
 
 .circulo {
   background-color: #aaa;
@@ -289,7 +362,12 @@ footer p{
   overflow: hidden;
   position: relative;
   float: right;
-  margin-top: 96.5em;
+  margin-top: 89em;
+  margin-right: 11.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .circulo img {
@@ -298,12 +376,101 @@ footer p{
   width: 410px;
   left: -7em;
 }
-.imagem01{
+#fotoPaleta1{
   float: left;
-  position: relative;
-  left: 25.5em;
-  margin-top: 25.5em;
+  position: absolute;
+  margin-left: 25.6em;
+  margin-top: 18.6em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+#fotoPaleta2{
+  float: left;
+  position: absolute;
+  margin-left: 49.4em;
+  margin-top: 75em;
+  left: 24.7em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.anime{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  animation-name: quadrado;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  margin-left: 20em;
+  animation-direction: alternate-reverse;
+
+}
+
+@keyframes quadrado {
+  0%   {background-color:red; left:100px; top:20px;}
+  25%  {background-color:yellow; left:400px; top:110px;}
+  50%  {background-color:blue; left:700px; top:150px;}
+  75%  {background-color:green; left:400px; top:200px;}
+  100% {background-color:red; left:200px; top:20px;}
+}
+.animale{
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  position: absolute;
+  animation: mymove 7s infinite;
+  animation-direction: alternate;
+  margin-top: em;
+}
+#div1 {animation-timing-function: linear;   /*java */
+      margin-top: -1em;}
+#div2 {animation-timing-function: ease;
+      margin-top: 1.8em;}
+#div3 {animation-timing-function: ease-in;
+  margin-top: -1em;}
+#div4 {animation-timing-function: ease-in;         /*hoots*/
+  margin-top: 3em;}
+#div5 {animation-timing-function: ease;
+      margin-top: 4.5em;}
+#div6{animation-timing-function: ease;
+  margin-top: 6em;}
+#div7 {animation-timing-function: linear;
+      margin-top: 4em;}
+#div8 {animation-timing-function: ease-in;
+      margin-top: 5em;}
+#div9 {animation-timing-function: ease-out;      /*Express*/
+      margin-top: -1em;}
+#div10 {animation-timing-function: ease-in;
+      margin-top: 1em;}
+#div11 {animation-timing-function: ease-in-out;
+  margin-top: 5.8em;}
+#div12 {animation-timing-function: ease;
+      margin-top: -1em;}
+#div13 {animation-timing-function: ease-out;
+      margin-top: 3em;}
+#div14 {animation-timing-function: ease-out;    /*git */
+      margin-top: 0.5em;}
+#div15 {animation-timing-function: ease-in-out;
+      margin-top: 0.5em;}
+#div16 {animation-timing-function: linear;     /*redux*/
+      margin-top: 2em;}
+#div17{
+  animation-timing-function: ease; 
+  background: red;
+  margin-top: 33em;
+  margin-left: 25%;
+  left: -4em;
+}
+@keyframes mymove {
+  from {left: 1px;}
+  to {left: 550px;}
+}
+
 /* 
 ===================================================
 Referências Bibliográficas 
