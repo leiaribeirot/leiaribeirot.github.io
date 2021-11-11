@@ -70,7 +70,7 @@ html,body {
 .intro header h1 {                    /* estilizando o h1 - Léia Ribeiro */
   position: absolute;                 /* ocupando posição absoluta nesse bloco */
   color: #ffffff;                   /* cor da fonte */
-  font-size: 300%;                    /* tamando da fonte na página */
+  font-size: 200%;                    /* tamando da fonte na página */
   top: 3em;                           /* proporção do h1 com relação a topo da página */
   margin-left: -1.9em;  /* posição do topo para a direita */
   padding: 0.7em;                     /* posição do topo para o meio */
@@ -178,8 +178,8 @@ Sessão 2 - Artigo - lado esquerdo - Requisito obrigatório
   position: absolute;                /* posição com relação ao main */
   float: left;                       /* define posição flutuando a esquerda - REQUISITO OBRIGATÓRIO */
   right: 37%;                        /* define o quanto ele está a esquerda na main */                        
-  margin-top: 14em;                  /* posição quanto ao top da página */
-  width: 42%;                        /* proporção da largura do bloco*/
+  margin-top: 14.5em;                  /* posição quanto ao top da página */
+  width: 40.3%;                        /* proporção da largura do bloco*/
   padding: 2em;                      /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
   box-sizing: border-box;            /* mudando a propriedade padrão da box model - largura e altura */
   -webkit-box-sizing: border-box;
@@ -187,7 +187,7 @@ Sessão 2 - Artigo - lado esquerdo - Requisito obrigatório
 }
 
 .lado-esquerdo h2 {                  /* Edição do Título h2 */
-  font-size: 220%;                   /* tamando da fonte na página */
+  font-size: 190%;                   /* tamando da fonte na página */
 }
 .lado-esquerdo p {
   width: 99%;                         /* proporção da largura da área do conteúdo */
@@ -221,7 +221,7 @@ Sessão 3 - Aprendizados - lado direito - Requisito obrigatório
 }
 
 .lado-direito h3 {                               /* Formatando h3 do lado direito*/     
-  font-size: 170%;                               /* tamano de exibição da fonte na página*/
+  font-size: 200%;                               /* tamano de exibição da fonte na página*/
   text-align: center;                            /* alinhamento dos h3 no bloco */
   margin-top: 3em;
 }
@@ -262,24 +262,26 @@ Sessão 4 - Alguns Dados Pessoais - Requisito NÂO obrigatório
 */
 .coluna{                                  /* coluna valores */
   float: left;
-  padding: 12px;
+  padding: 11px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  width: 20.4%;
 }
 .valores{                                     /* crinado classe valores*/
   position: absolute;                         /* posição com relação a main*/
-  right: 16.5em;                                 /* posição a esquerda dentro do blco */
   margin: 69.3em 0 0 0;                         /* margem com relação ao topo*/
-  width: 61%;                                 /* proporção da largura da tabela a página - onde inicia essa bloco*/                      
+  width: 89%;                                 /* proporção da largura da tabela a página - onde inicia essa bloco*/                      
   box-sizing: border-box;                     /* mudando a propriedade padrão da box model - largura e altura */
   font-family: 'Trebuchet MS';                 /* fonte dos parágrafos do bloco*/ 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  left:8.6em;
 }
 #valor1{
   background: rgb(255, 117, 143);
+
 }
 #valor2{
   background: rgb(255, 77, 109);
@@ -291,9 +293,9 @@ Sessão 4 - Alguns Dados Pessoais - Requisito NÂO obrigatório
   position: absolute;                          /* posição com relação a main*/
   font-size: 300%;                             /* tamanho de exibição na página */ 
   line-height: 3em;                            /* espaçamento entre linhas */
-  margin-left: -4.6em;                                  /* posição do h3 do topo para a direita */
+  margin-left: 0.5em;                                  /* posição do h3 do topo para a direita */
   padding: 3em;                                /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
-  margin-top: -1.5em;
+  margin-top: -1.8em;
   -webkit-transform: rotate(-90deg); /* permite a rotação para a vertical do h3 */
 }
 
@@ -302,12 +304,12 @@ Sessão 4 - Alguns Dados Pessoais - Requisito NÂO obrigatório
   position: absolute;                           /* posição com relação ao main */
   float: right;                                 /* define posição flutuando a esquerda - REQUISITO OBRIGATÓRIO */
   right: 37.88%;                                /* define o quanto ele está a esquerda na main */                        
-  margin-top: 52em;                             /* posição quanto ao top da página */
-  width: 39.5%;                                 /* proporção da largura do bloco*/
+  margin-top: 43.8em;                             /* posição quanto ao top da página */
+  width: 39.4%;                                 /* proporção da largura do bloco*/
   padding: 2em;                                 /* proporção de distância entre o conteúdo e suas bordas - todos os lados */
   box-sizing: border-box;                       /* mudando a propriedade padrão da box model - largura e altura */
   font-family: 'Trebuchet MS';                    /* fonte dos parágrafos do bloco*/ 
-  font-size: 105%;                                /* tamando da fonte na página */
+  font-size: 120%;                                /* tamando da fonte na página */
   height: 14em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -337,7 +339,6 @@ footer {
   background: #ffc6ff;
   display: inline-block;
   position: absolute;
-  float: left;
   margin-top: 74em;
   width: 32%;
   right: 2.2%;
@@ -348,7 +349,7 @@ footer {
 }
 
 footer p{ 
-  font-size: 95%;                                /* tamando da fonte na página */
+  font-size: 99%;                                /* tamando da fonte na página */
   line-height: 1.2em;                            /* espaçamento entre linhas dos p*/
   padding:0.2em 1em 0em 2.5em;
 }
@@ -362,7 +363,7 @@ footer p{
   overflow: hidden;
   position: relative;
   float: right;
-  margin-top: 89em;
+  margin-top: 90em;
   margin-right: 11.5em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
