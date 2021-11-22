@@ -69,7 +69,7 @@ html,body {
 
 .intro header h1 {                    /* estilizando o h1 - Léia Ribeiro */
   position: absolute;                 /* ocupando posição absoluta nesse bloco */
-  color: #ffffff;                   /* cor da fonte */
+  color: #ffc5c5;                   /* cor da fonte */
   font-size: 200%;                    /* tamando da fonte na página */
   top: 3em;                           /* proporção do h1 com relação a topo da página */
   margin-left: -1.9em;  /* posição do topo para a direita */
