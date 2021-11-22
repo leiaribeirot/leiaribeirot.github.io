@@ -1,110 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-      <meta charset="UTF-8" />
-      <title>Portfólio - Léia Ribeiro</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-  <body>
-    <style>  /* Coloquei o stylo aqui pois não ficou no GitHub com o CSS fora em um outro doc. */
-      body {
-        background: #020202;
-      }
-      
-        /* Header/Blog Title - Menu */
-      .header {
-          position:relative;
-          padding:25%;
-          text-align: center;
-          background-image: url(imagensI/InicioCorte.png);
-          overflow: hidden;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          font-size: 100%;  
-        }
 
-        /* Navegação pelo site */
-      .topnav {
-          overflow: hidden;
-        }
-      .topnav a {
-          float: left;
-          display: block;
-          text-align: center;
-          padding: 0.5%;
-        }
-      .topnav a:hover {
-          background-color: rgb(189, 174, 37);
-          color: black;
-          margin-top: 0.5em;
-      }
-      #posicao{
-          position: fixed;
-          top: 87%;
-          width: 100%;
-          margin-top: -1em;
-          padding-left: 2em;
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfólio - Léia Ribeiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-      }
-      .aba {
-          display: block;  /* mudei aqui  de line-block para block */
-          font-size: 75%;
-          text-align: center; /* centralizando a imagem */
+<body>
+  <style>
+    /* Coloquei o stylo aqui pois não ficou no GitHub com o CSS fora em um outro doc. */
+    body {
+      background: #020202;
+    }
 
-      }
+    /* Header/Blog Title - Menu */
+    .header {
+      position: relative;
+      padding: 25%;
+      text-align: center;
+      background-image: url(imagensI/InicioCorte.png);
+      overflow: hidden;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-size: 100%;
+    }
 
-      .aba > a {   /* colocando margem com borda */
-          float: left;
-          width: 99%;
-          border-width: 12px;
-          border-style: solid;
-          border-color: rgb(58, 58, 209);
-          border-top-right-radius: 20px;
-          border-top-left-radius: 20px;
+    /* Navegação pelo site */
+    .topnav {
+      overflow: hidden;
+    }
 
-      }
-      .aba img{
-          height: 95em;
-      }
+    .topnav a {
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 0.5%;
+    }
 
-      .conteudo{
-          display: block;
-          position: absolute;
-          color: rgb(236, 232, 232);
-          text-justify: inter-word ;
-          text-align: justify;
-          margin-top: 40.5%;  /* o quão mais baixo do top está */
-          margin-left: 30%;  /* o quão está mais do centro para a direita */
-          width: 60em;
-      }
-      p, h2 {
-          font-family: 'Courier New', Courier, monospace;
-          font-size: 145%;  /* tamanho do texto todo na página */
-          margin-top: 1.5em;
-      }
-      .conteudo a{
-          color: chartreuse;
-      }
-    </style>
+    .topnav a:hover {
+      background-color: rgb(189, 174, 37);
+      color: black;
+      margin-top: 0.5em;
+    }
 
-    <div class="header" id="img"></div>
-    <div class="topnav" id="posicao">
-      <a href="#"><img src="imagensI/MENU.png" width="150px" height="auto"></a>
-      <a href="#aba-1"><img src="imagensI/level1.png" width="230px" height="auto"></a>
-    </div>
-    <div class="aba" id="aba-1">
-        <a href="#aba-1"><img src="imagensI/repNivelI-Cort.png"></a>
-          
-          <section class="conteudo">
+    #posicao {
+      position: fixed;
+      top: 87%;
+      width: 100%;
+      margin-top: -1em;
+      padding-left: 2em;
 
-            <h2>Projeto 1 - Lessons Learned - HTML & CSS </h2>
-            <p>Esse projeto tem por objetivo a criação de uma página escrita em HTML e estilizada em CSS onde constam lições aprendidas e lições a aprender da aluna da Trybe Léia Ribeiro (essa aqui que vos escreve) e suas competências em Soft Skills e Hard Skills.
-              <br> Acesse os resultados atuais do projeto na página web clicando aqui:
-              <a href="./projetos/1-pr-01-lessons-learned-html-e-css/intex.html" target="_blank">LEVEL 1</a></p>
-            </p>
-          </section>
-    </div>
-  </body>
+    }
+
+    .aba {
+      display: block;
+      /* mudei aqui  de line-block para block */
+      font-size: 75%;
+      text-align: center;
+      /* centralizando a imagem */
+
+    }
+
+    .aba>a {
+      /* colocando margem com borda */
+      float: left;
+      width: 99%;
+      border-width: 12px;
+      border-style: solid;
+      border-color: rgb(58, 58, 209);
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+
+    }
+
+    .aba img {
+      height: 95em;
+    }
+
+    .conteudo {
+      display: block;
+      position: absolute;
+      color: rgb(236, 232, 232);
+      text-justify: inter-word;
+      text-align: justify;
+      margin-top: 40.5%;
+      /* o quão mais baixo do top está */
+      margin-left: 30%;
+      /* o quão está mais do centro para a direita */
+      width: 60em;
+    }
+
+    p,
+    h2 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 145%;
+      /* tamanho do texto todo na página */
+      margin-top: 1.5em;
+    }
+
+    .conteudo a {
+      color: chartreuse;
+    }
+  </style>
+
+  <div class="header" id="img"></div>
+  <div class="topnav" id="posicao">
+    <a href="#"><img src="imagensI/MENU.png" width="150px" height="auto"></a>
+    <a href="#aba-1"><img src="imagensI/level1.png" width="230px" height="auto"></a>
+  </div>
+  <div class="aba" id="aba-1">
+    <a href="#aba-1"><img src="imagensI/repNivelI-Cort.png"></a>
+
+    <section class="conteudo">
+
+      <h2>Projeto 1 - Lessons Learned - HTML & CSS </h2>
+      <p>Esse projeto tem por objetivo a criação de uma página escrita em HTML e estilizada em CSS onde constam lições
+        aprendidas e lições a aprender da aluna da Trybe Léia Ribeiro (essa aqui que vos escreve) e suas competências em
+        Soft Skills e Hard Skills.
+        <br> Acesse os resultados atuais do projeto na página web clicando aqui:
+        <a href="./projetos/1-pr-01-lessons-learned-html-e-css/index.html" target="_blank">LEVEL 1</a>
+      </p>
+      </p>
+    </section>
+  </div>
+</body>
+
 </html>
