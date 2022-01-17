@@ -1,131 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
-  <title>Portfólio - Léia Ribeiro</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio - Léia Ribeiro</title>
 </head>
 
 <body>
-  <style>
-    /* Coloquei o stylo aqui pois não ficou no GitHub com o CSS fora em um outro doc. */
-    body {
-      background: #020202;
-    }
+  <div class="cardPerfil backgroundArtPixel">
+    <h1><b>Portfólio</h1>
+    <h2><b>Léia<br>Ribeiro</b></h2>
 
-    /* Header/Blog Title - Menu */
-    .header {
-      position: relative;
-      padding: 25%;
-      text-align: center;
-      background-image: url(imagensI/InicioCorte.png);
-      overflow: hidden;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      font-size: 100%;
-    }
-
-    /* Navegação pelo site */
-    .topnav {
-      overflow: hidden;
-    }
-
-    .topnav a {
-      float: left;
-      display: block;
-      text-align: center;
-      padding: 0.5%;
-    }
-
-    .topnav a:hover {
-      background-color: rgb(189, 174, 37);
-      color: black;
-      margin-top: 0.5em;
-    }
-
-    #posicao {
-      position: fixed;
-      top: 87%;
-      width: 100%;
-      margin-top: -1em;
-      padding-left: 2em;
-
-    }
-
-    .aba {
-      display: block;
-      /* mudei aqui  de line-block para block */
-      font-size: 75%;
-      text-align: center;
-      /* centralizando a imagem */
-
-    }
-
-    .aba>a {
-      /* colocando margem com borda */
-      float: left;
-      width: 99%;
-      border-width: 12px;
-      border-style: solid;
-      border-color: rgb(58, 58, 209);
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-
-    }
-
-    .aba img {
-      height: 95em;
-    }
-
-    .conteudo {
-      display: block;
-      position: absolute;
-      color: rgb(236, 232, 232);
-      text-justify: inter-word;
-      text-align: justify;
-      margin-top: 40.5%;
-      /* o quão mais baixo do top está */
-      margin-left: 30%;
-      /* o quão está mais do centro para a direita */
-      width: 60em;
-    }
-
-    p,
-    h2 {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 145%;
-      /* tamanho do texto todo na página */
-      margin-top: 1.5em;
-    }
-
-    .conteudo a {
-      color: chartreuse;
-    }
-  </style>
-
-  <div class="header" id="img"></div>
-  <div class="topnav" id="posicao">
-    <a href="#"><img src="imagensI/MENU.png" width="150px" height="auto"></a>
-    <a href="#aba-1"><img src="imagensI/level1.png" width="230px" height="auto"></a>
+    <P>Administradora e Estudante de Desenvolvimento Web Full Stack na Trybe!
+      <br>Entusiasta do belo e que acredita piamente do poder das palavras e no humano!
+      <br>A vida acontece em instantes, aproveitar ao máximo cada instante e trazer alegria e qualidade de vida aos que
+      estão ao meu redor é minha missão!
+      <br>Criar soluções e produtos que tragam essa alegria que enche aos olhos do outro é meu principal objetivo!
+      <br>Ser feliz nessa trajetória é o foco!
+      <br>Bem-vindos!
+      </b>
+    </P>
+    <div class="circulo">
+      <img id="minha_foto" src="imagens/leia_R&B.jpg">
+    </div>
   </div>
-  <div class="aba" id="aba-1">
-    <a href="#aba-1"><img src="imagensI/repNivelI-Cort.png"></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 d-flex align-items-stretch">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="imagens/Projeto_01.png" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lessons Learned</h5>
+            <p class="card-text">Página web em HTML e CSS onde constam informações sobre aprendizados na Trybe.</p>
+            <a href="/projetos/1-pr-01-lessons-learned-html-e-css/index.html" class="btn btn-primary">Clique Aqui</a>
+          </div>
+        </div>
 
-    <section class="conteudo">
-
-      <h2>Projeto 1 - Lessons Learned - HTML & CSS </h2>
-      <p>Esse projeto tem por objetivo a criação de uma página escrita em HTML e estilizada em CSS onde constam lições
-        aprendidas e lições a aprender da aluna da Trybe Léia Ribeiro (essa aqui que vos escreve) e suas competências em
-        Soft Skills e Hard Skills.
-        <br> Acesse os resultados atuais do projeto na página web clicando aqui:
-        <a href="./projetos/1-pr-01-lessons-learned-html-e-css/index.html" target="_blank">LEVEL 1</a>
-      </p>
-      </p>
-    </section>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="imagens/Projeto_02.png" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pixel's Art</h5>
+            <p class="card-text">Página web que contém uma paleta de cores funcional que poderá ser utilizada para criar
+              desenhos em pixels.</p>
+            <a href="/projetos/1-pr-01-lessons-learned-html-e-css/index.html" class="btn btn-primary">Clique Aqui</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="imagens/Projeto_03.png" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">To Do List</h5>
+            <p class="card-text">Página Web de lista de tarefas usando HTML, CSS e JavaScript.</p>
+            <a href="/projetos/1-pr-01-lessons-learned-html-e-css/index.html" class="btn btn-primary">Clique Aqui</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="imagens/Projeto_04.png" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trybewarts</h5>
+            <p class="card-text">Página web de Fomulário utilizando CSS Flexbox.</p>
+            <a href="/projetos/1-pr-01-lessons-learned-html-e-css/index.html" class="btn btn-primary">Clique Aqui</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</body>
+
+  <body>
+    <footer>
+      <h4><b>Me encontre:</h4>
+      <ul>
+        <a id="linkGmail" href="mailto:leiaribeirot@gmail.com" target="_blank"><img id="email"
+            src="https://img.shields.io/badge/-Gmail-D14836?style=flat-asquare&logo=Gmail&logoColor=white&link=mailto:leiaribeirot@gmail.com"
+            width="90px" alt="Léia Gmail"></a>
+        <a id="linkGit" href="https://github.com/leiaribeirot" target="_blank"><img id="repoGit" alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/leiaribeirot/leiaribeirot?label=GitHub&amp;style=social"
+            width="130px"></a>
+        <a id="linkLinkedin" href="https://www.linkedin.com/in/léia-ribeirot/" target="_blank"><img id="linkedin"
+            src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-asquare&logo=Linkedin&logoColor=white"
+            width="115px" alt="Léia LinkedIn"></a>
+        <a id="linkInstagram" href="https://www.instagram.com/leia.ribeirot/" target="_blank"><img id="instagram"
+            src="https://img.shields.io/badge/Instagram-E4405F?style=flat-asquare&logo=instagram&logoColor=white"
+            width="130px" alt="Léia Instagram"></a>
+      </ul>
+    </footer>
 
 </html>
