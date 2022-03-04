@@ -3,7 +3,3 @@
 
 Acesse os resultados de todas as páginas web dos projetos aqui em:
 [GitHub Pages](https://leiaribeirot.github.io)
-
-## Módulo 1: Fundamentos do Desenvolvimento Web
-### Projeto 1 - Códigos: [Lessons Learned](https://github.com/leiaribeirot/leiaribeirot.github.io/tree/main/projetos/1-pr-01-lessons-learned-html-e-css) :rocket:
-- [x] 1.1 - Estrutura HTML e Estilização CSS.
