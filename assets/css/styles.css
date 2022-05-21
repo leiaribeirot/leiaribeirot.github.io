@@ -9,7 +9,7 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #f1c0e8;
+    --first-color: #ffafcc;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
@@ -32,7 +32,7 @@
     }
 }
 
-/*===== Margenes =====*/
+/*===== Margens =====*/
 :root{
     --mb-1: .5rem;
     --mb-2: 1rem;
@@ -219,9 +219,12 @@ img{
 .about__img{
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
-    width: 120px;
-    height: 20px;
+    padding-top: 15px;
+    padding-left: -55px;
+    padding-right: -55px;
+    padding-bottom: 1px;
+    width: 200px;
+    height: 200px;
     background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
@@ -229,7 +232,7 @@ img{
 .about__img img{
     margin-top: -15px;
     width: 160px;
-    height: -270px;
+    height: -250px;
     border-radius: 50%;
 }
 
